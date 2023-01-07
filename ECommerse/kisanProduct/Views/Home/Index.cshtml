@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to KISANKART</h1>
+    <ol>
+        <li class="color">Flowers</li>
+        <li class="color">Fruits</li>
+        <li class="color">Vegetables</li>
+    </ol> 
+
+    @{
+        List<string> flowers=new List<string>();
+        flowers.Add("Gerbera");
+        flowers.Add("Lily");
+        flowers.Add("Rose");
+        flowers.Add("Lotus");
+        <ol class="color">
+            @foreach(string flower in flowers){
+                <li>@flower</li>
+            }
+        </ol>
+    } 
+
+    <hr/>
+    <img src="/images/download.jfif" width="200" height="200"/><br>  
+    <img src="/images/fruit.jfif" width="200" height="200"/>  
+    <img src="/images/image.jfif" width="200" height="200"/> 
+     <img src="/images/a1.jfif" width="200" height="200"/><br>   
+    <img src="/images/a2.jfif" width="200" height="200"/>  
+    <img src="/images/a3.jfif" width="200" height="200"/> 
+</div>
